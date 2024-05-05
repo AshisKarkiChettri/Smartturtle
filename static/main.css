@@ -1,0 +1,89 @@
+/* Styles for the interface */
+body {
+    font-family: 'times new roman', sans-serif;
+    background-color: hsl(205, 19%, 48%); 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: hwb(200 12% 38%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsl(90, 100%, 100%);
+}
+
+.item {
+    flex: 0 0 calc(33.33% - 20px); 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid hwb(22 3% 1%); 
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    /* Added to preserve original case */
+    text-transform: none;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Added to preserve original case */
+    text-transform: none;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(30% - 70px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 20%;
+}
+
+button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(180, 69%, 40%); /* Teal */
+    color: hsl(180, 54%, 47%);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: hsl(199, 100%, 20%); /* Darker teal */
+}
+
+#conversation {
+    margin-bottom: 20px;
+}
+
+.user-message,
+.bot-message {
+    background-color: #f0f0f0;
+    /* Removed font styles for consistency */
+    padding: 100px;
+    border-radius: 500px;
+    margin-bottom: 500px;
+    /* Added to preserve original case */
+    text-transform: none;
+}

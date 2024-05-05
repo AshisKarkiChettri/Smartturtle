@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal &amp; Technical Companion</title>
+    <link rel="stylesheet" href="/static/main.css" />
+  </head>
+  <body>
+    <h1><b>Welcome to Technical and Personal Companion!</h1>
+    <h1>You can ask for:</b></h1>
+    <br />
+    <div class="container">
+      <div class="item"><i>Request a joke</i></div>
+      <div class="item"><i>Inquire about the weather</i></div>
+      <div class="item"><i>Engage in small talk</i></div>
+      <div class="item"><i>Request a trivia</i></div>
+      <div class="item"><i>Get activity suggestions</i></div>
+      <div class="item"><i>Ask for motivational quotes</i></div>
+      <div class="item"><i>Learn about technology trends</i></div>
+      <div class="item"><i>Receive book recommendations</i></div>
+      <div class="item"><i>Get tips for healthy habits</i></div>
+      <div class="item"><i>Receive financial advice</i></div>
+      <div class="item"><i>Receive self-care advice</i></div>
+    </div>
+    <form action="{{url_for('response')}}" method="POST">
+      You: <input type="text" name="prompt" />
+      <input type="submit" value="GO!" />
+    </form>
+    <p>Response: {{reply}}</p>
+    <p>
+      Total character count = {{total_characters}} <br />
+      Uppercase count = {{uppercases}} <br />
+      Lowercase count = {{lowercases}}
+    </p>
+    <img src="{{ plot_url }}" />
+  </body>
+</html>
